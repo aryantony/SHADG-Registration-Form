@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('/back.svg');
+    background-image: url('back.svg');
     background-size: cover; /* Adjusts the size to cover the whole body */
     background-position: center;
 }
