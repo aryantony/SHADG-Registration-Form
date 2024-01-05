@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Css  -->
+    <link href="./style.css" rel="stylesheet">
+    <title>Registration Form : SHADG</title>
+</head>
+
+<body>
+    <!-- <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycby6EIMAQsxXALl_GIr6hcam1h6XFk52rktGyAhUiSvejspUXFlialOAbcQD4TgvcH1w/exec"
+>
+  <input name="Email" type="email" placeholder="Email" >
+  <input name="Name" type="text" placeholder="Name" >
+  <button type="submit">Send</button>
+
+</form>
+<form id="formData"> -->
+    <div id="loadingOverlay">
+        <div id="loadingMessage">
+            <p>Processing...</p>
+            <!-- You can add a spinner or any loading animation here -->
+        </div>
+    </div>
+    <h1 id="shadG"> SHAD Registration Form</h1>
+    <form id="formData" method="POST"
+        action="https://script.google.com/macros/s/AKfycby6EIMAQsxXALl_GIr6hcam1h6XFk52rktGyAhUiSvejspUXFlialOAbcQD4TgvcH1w/exec">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <span id="firstNameError" class="error-message"></span><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <span id="lastNameError" class="error-message"></span><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        <span id="genderError" class="error-message"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="ey" id="email" name="email"><br>
+        <span id="emailError" class="error-message"></span><br>
+
+        <label for="phoneNumber">Phone Number </label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" maxlength="10"><br>
+        <span id="phoneNumberError" class="error-message"></span><br>
+
+        <label for="Institute">Institute Name:</label>
+        <input type="text" id="orgName" name="Institute"><br>
+        <span id="orgNameError" class="error-message"></span><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="thankYouMessage" class="hidden">
+        <h2>Thank you for your submission!</h2>
+        <!-- You can add additional content here -->
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
